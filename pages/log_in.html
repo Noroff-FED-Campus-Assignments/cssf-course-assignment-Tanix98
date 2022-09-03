@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <script defer src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
     <!-- header (Hamburger menu only works in index, not fixed to top) -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4 d-flex align-items-center">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex align-items-center fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler col-1.1 col-sm-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobilemenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="/index.html" class="navbar-brand col-10.1 col-md m-auto"><h2 style="white-space: normal;"><strong>Company logo</strong></h2></a>
+            <div class="col-10.1 col-sm-5 col-md-4 m-auto">
+                <a href="/index.html" class="navbar-brand d-inline-block"><h2 style="white-space: normal;"><strong>Company logo</strong></h2></a>
+            </div>
             <div class="collapse navbar-collapse" id="mobilemenu">
                 <!-- Decrease search bar width on sm screens -->
                 <div class="">
@@ -29,14 +31,14 @@
                         </span>
                     </div>
                 </div>
-                <!-- Increase button width on sm screens -->
+                <!-- Increase button width on sm screens, button collides with search bar at sm -->
                 <div class="text-center d-sm-none mt-3 mt-sm-0">
                     <a href="" class="btn btn-primary" role="button">Create post</a>
                 </div>
                 <div class="text-center d-sm-none mt-3 mt-sm-0">
                     <a href="/index.html" class="btn btn-light" role="button">Homepage</a>
                 </div>
-                <div class="col-sm text-center text-sm-end">
+                <div class="col-sm text-center text-sm-end ps-1">
                     <a href="log_in.html" class="btn btn-outline-success mt-3 mt-sm-0 col-sm" role="button">Log in</a>
                 </div>
             </div>
@@ -67,8 +69,8 @@
         </div>
     </main>
 
-    <!-- footer (not fixed to bottom) -->
-    <footer class="text-center bg-light p-2 mt-3">
+    <!-- footer (find better solution) -->
+    <footer class="text-center bg-light p-2 mt-3 fixed-bottom">
         <div class="container">
             <p>Copyright &copy; 2022 Company</p>
         </div>
