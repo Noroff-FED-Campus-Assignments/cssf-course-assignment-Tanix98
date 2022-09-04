@@ -9,17 +9,16 @@
     <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
-    <!-- header (Hamburger menu only works in index, not fixed to top) -->
+    <!-- header -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex align-items-center fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler col-1.1 col-sm-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobilemenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="col-10.1 col-sm-5 col-md-4 m-auto">
-                <a href="/index.html" class="navbar-brand d-inline-block"><h2 style="white-space: normal;"><strong>Company logo</strong></h2></a>
+            <div class="col-10.1 col-sm-4 col-md-4 m-auto">
+                <a href="/index.html" class="navbar-brand d-inline-block m-0"><h2><strong>Company logo</strong></h2></a>
             </div>
             <div class="collapse navbar-collapse" id="mobilemenu">
-                <!-- Decrease search bar width on sm screens -->
                 <div class="">
                     <div class="input-group mt-3 mt-sm-0 m-auto col-sm-6 ps-sm-4 ps-md-0">
                         <input class="form-control border-end-0 border rounded-0"" type="search" value="" placeholder="Search..." id="example-search-input">
@@ -31,14 +30,13 @@
                         </span>
                     </div>
                 </div>
-                <!-- Increase button width on sm screens, button collides with search bar at sm -->
                 <div class="text-center d-sm-none mt-3 mt-sm-0">
                     <a href="" class="btn btn-primary" role="button">Create post</a>
                 </div>
                 <div class="text-center d-sm-none mt-3 mt-sm-0">
                     <a href="/index.html" class="btn btn-light" role="button">Homepage</a>
                 </div>
-                <div class="col-sm text-center text-sm-end ps-1">
+                <div class="col-sm text-center text-sm-end ps-1" style="white-space: nowrap;">
                     <a href="log_in.html" class="btn btn-outline-success mt-3 mt-sm-0 col-sm" role="button">Log in</a>
                 </div>
             </div>
@@ -49,7 +47,7 @@
     <main>
         <div class="container-xxl">
             <div class="row d-flex justify-content-center">
-                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                <div class="col-11 col-sm-7 col-md-5 col-lg-4 col-xxl-3">
                     <form action="/pages/profile.html" class="d-flex flex-column m-auto">
                         <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
@@ -72,7 +70,7 @@
     <!-- footer (find better solution) -->
     <footer class="text-center bg-light p-2 mt-3 fixed-bottom">
         <div class="container">
-            <p>Copyright &copy; 2022 Company</p>
+            <div class="p-2">Copyright &copy; 2022 Company</div>
         </div>
     </footer>
 </body>
